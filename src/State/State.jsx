@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 
-const State = () => {
-    console.log(useState());
+const State = () => {    
+    const [name,setName] = useState("First Title");
+
   const chnageTitle = () => {
-    title = "New Title";
-    console.log(title);
+    if(name == "First Title"){
+        setName("Second Title");
+    }
+    else{
+        setName("First Title");
+    }
   };
   return (
     <div>
-      <h1>{}</h1>
+      <h1>{name}</h1>
       <button onClick={chnageTitle} className="btn btn-dark">
         Change Title
       </button>
