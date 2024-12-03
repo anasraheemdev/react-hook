@@ -1,13 +1,12 @@
 import React from 'react'
-import Events from './Events/Events'
-import State from './State/State'
+import Counter from './Counter'
+
 
 const App = () => {
 
   return (
     <>
-    {/* <Events/> */}
-    <State/>
+    <Counter/>
     </>
   )
 }
